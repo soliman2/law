@@ -238,7 +238,7 @@ body {
 
 .navigation-menu ul:not(.mobile-menu) .megamenu {
     position: absolute;
-    top: 100%;
+    top: -8000px;
     right: 0;
     width: 100%;
     z-index: 100;
