@@ -1,0 +1,58 @@
+ <div class="row">
+                            <div class="col-s-12 col-m-6">
+[text* fullname placeholder "الاسم:"]
+                            </div>
+                            <div class="col-s-12 col-m-6">
+[email* email placeholder "البريد الالكتروني:"]
+                            </div>
+                            <div class="col-s-12 col-m-6">
+[text* phone placeholder "رقم الهاتف:"]
+                            </div>
+                            <div class="col-s-12 col-m-6">
+[text* subject placeholder "العنوان:"]
+                            </div>
+
+                            <div class="col-s-12 col-l-12">
+[textarea* message placeholder "الرساله:"]
+                            </div>
+     
+[submit "إرسال"]                        </div>
+
+
+
+
+[text* fullname placeholder "الاسم:"]
+
+[email* email placeholder "البريد الالكتروني:"]
+[text* phone placeholder "رقم الهاتف:"]
+[text* subject placeholder "العنوان:"]
+[textarea* message placeholder "الرساله:"]
+[submit "إرسال"]
+
+
+    <section class="form-content " id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-s-12 col-m-12 col-l-7">
+                    <div class="row">
+                        <div class="form-style" style="width: 100%">
+                        <div class="title">
+                        <h3> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hammer.png" alt="icon">ضع استشاراتك القانونيه </h3>
+                        <h4> سوف يقوم بالرد عليك خبرائنا القانونين</h4>
+                        </div>
+
+                        <?php echo do_shortcode( '[contact-form-7 id="123" title="ضع استشارتك القانونيه"]' ); ?>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-s-12 col-m-12 col-l-5 hidden-m-down">
+					<?php if ( is_active_sidebar( 'contact-1' ) ) { ?>
+				<?php dynamic_sidebar( 'contact-1' ); ?>
+			
+		<?php } ?>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
